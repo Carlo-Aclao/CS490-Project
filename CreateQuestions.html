@@ -1,0 +1,79 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="styles/teacherStyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Varela&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="CreateQuestions.html">CREATE QUESTIONS</a>
+                </li>
+                <li>
+                    <a href="CreateTests.html">CREATE TESTS</a>
+                </li>
+                <li>
+                    <a href="ViewSubmissions.html">VIEW SUBMISSIONS</a>
+                </li>
+                <li style="float:right;border-left: 1.5px solid #304352;">
+                    <a href="../login.html">LOGOUT</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="questions">
+            <div id="questionForm">
+                <div class="content">
+                    <h1>CREATE QUESTION</h1>
+                    <h4>Function Name</h4>
+                    <input type="text" id="nameOfFunc" placeholder="Function Name here..">
+
+                    <h4>Parameters</h4>
+                    <input type="text" id="parametersFunc" placeholder="Parameter Here..">
+
+                    <h4>Logic of Function</h4>
+                    <textarea id="logicFunc" placeholder="Write Logic of Function here.."></textarea>
+
+                    <h4>Return Type</h4>
+                    <input type="text" id="returnFunc" placeholder="Return Type here..">
+
+                    <h4>Test Cases</h4>
+                    <input type="text" id="testCases" placeholder="Put Test Cases here..">
+
+                    <h4>Difficulty</h4>
+                    <select id="difficultFunc">
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                            <option value="very hard">Very Hard</option>
+                    </select>
+
+                    <h4>Topic</h4>
+                    <select id="sortFunc">
+                            <option value="loops">Loops</option>
+                            <option value="math">Math</option>
+                            <option value="print">Print</option>
+                    </select>
+
+                    <input style="margin-top: 30px;height:50px;" onclick="createQuestions()" id="submitButton" type="submit" value="SUBMIT">
+                </div>
+            </div>
+
+            <div id="questionTable">
+                <div class="content">
+                    <h1>QUESTIONS TABLE
+                    </h1>
+                </div>
+                <div id="table">
+
+                </div>
+            </div>
+            <br clear="both">
+        </div>
+    
+        <script src="CreateQuestions.js"></script>
+    </body>
+
+</html>
